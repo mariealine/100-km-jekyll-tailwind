@@ -8,6 +8,20 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
+# Site info
+title : Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk
+description: Partout en France, découvrez les merveilles de notre pays en voyageant à proximité de chez vous. Surprises et souvenirs garantis !
+encoding: utf-8
+lang: FR-fr
+author:
+  name: Marie-Aline Millot
+  email: mariealine@weekendesk.fr
+
+google_analytics:
+baseurl: ""
+repo: "https://github.com/mariealine/100-km-jekyll-tailwind"
+url: ""
+
 # Build settings
 markdown: kramdown
 plugins:

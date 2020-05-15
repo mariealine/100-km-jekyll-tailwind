@@ -2,25 +2,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   
+  <title>Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk</title>
+  <meta name="title" content="Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk">
+  <meta name="description" content="Partout en France, découvrez les merveilles de notre pays en voyageant à proximité de chez vous. Surprises et souvenirs garantis !">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/#">
+  <meta property="og:title" content="Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk">
+  <meta property="og:description" content="Partout en France, découvrez les merveilles de notre pays en voyageant à proximité de chez vous. Surprises et souvenirs garantis !">
+  <meta property="og:image" content="/assets/meta-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="/#">
+  <meta property="twitter:title" content="Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk">
+  <meta property="twitter:description" content="Partout en France, découvrez les merveilles de notre pays en voyageant à proximité de chez vous. Surprises et souvenirs garantis !">
+  <meta property="twitter:image" content="/assets/meta-image.png">
+
   <link rel="stylesheet" href="/css/site.css">
+
 </head>
 <html lang="fr" class="bg-white antialiased">
-<body class="w-full bg-white">
+  <body class="w-full bg-white">
 
-  {% include navigation.html %}
+    {% include navigation.html %}
 
-  <div >
-    <section>
-      {{ content }}
-    </section>
+    <div >
+      <section>
+        {{ content }}
+      </section>
 
-    {% if jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
-  </div>
+      {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+      {% endif %}
+    </div>
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-
-</body>
+  </body>
 </html>

@@ -14,18 +14,24 @@ plugins:
   - jekyll-postcss
   - jekyll-purgecss
 
+defaults:  
+  - scope:
+    path: ""
+  values:
+    layout: "default"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - "assets"
+  - bin
+  - "*.config.js"
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - yarn.lock
-  - package-lock.json
-  - README.md
-  - postcss.config.js
-  - purgecss.config.js
-  - netlify.toml
-  - bin
   - .gitignore
+  - netlify.toml
+  - node_modules
+  - "package*.json"
+  - README.md
+  - yarn.lock

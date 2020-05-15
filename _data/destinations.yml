@@ -1,0 +1,30 @@
+- weekend: Lyon
+  title: Week-end autour de lyon
+  image:
+  cta_label:
+  cta_link:
+- weekend: Marseille
+  title: Week-end autour de Marseille
+  image:
+  cta_label:
+  cta_link:
+- weekend: Paris
+  title: Week-end autour de Paris
+  image:
+  cta_label:
+  cta_link:
+- weekend: Lille
+  title: Week-end autour de Lille
+  image:
+  cta_label:
+  cta_link:
+- weekend: Rennes
+  title: Week-end autour de Rennes
+  image:
+  cta_label:
+  cta_link:
+- weekend: Bordeaux
+  title: Week-end autour de Bordeaux
+  image:
+  cta_label:
+  cta_link:

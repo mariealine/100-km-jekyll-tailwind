@@ -1,8 +1,18 @@
+# Jekyll
 _site
-.DS_STORE
 .sass-cache
+.jekyll-cache
 .jekyll-metadata
+
+# Tailwind
+_includes/tailwind.js
+
+# Node
 node_modules
 yarn.lock
-Gemfile.lock
-_includes/tailwind.js
+
+# Ruby
+vendor/bundle
+
+# macOS
+.DS_Store

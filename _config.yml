@@ -1,14 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site info
 title : Découvrez les séjours à moins de 100km de chez vous ! - Weekendesk
 description: Partout en France, découvrez les merveilles de notre pays en voyageant à proximité de chez vous. Surprises et souvenirs garantis !
 encoding: utf-8
@@ -23,29 +12,21 @@ repo: "https://github.com/mariealine/100-km-jekyll-tailwind"
 url: ""
 
 # Build settings
-markdown: kramdown
 plugins:
   - jekyll-postcss
   - jekyll-purgecss
 
-defaults:  
+defaults:
   - scope:
       path: ""
     values:
       layout: "default"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# Exclude from processing
+# Merge with default excludes https://jekyllrb.com/docs/upgrading/3-to-4/#exclusion-changes
 exclude:
-  - "assets"
-  - bin
   - "*.config.js"
-  - Gemfile
-  - Gemfile.lock
-  - .gitignore
   - netlify.toml
-  - node_modules
-  - "package*.json"
+  - package.json
   - README.md
   - yarn.lock

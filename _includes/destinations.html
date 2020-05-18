@@ -1,0 +1,24 @@
+<section class="w-full max-w-screen-xl mx-auto px-6 m-4">
+  <h1 class="text-3xl p-2">De merveilleuses destinations <span class="text-indigo-600">à deux pas de chez vous</span></h1>
+  <div class="flex flex-col ">
+    <div class="flex flex-col md:flex-row justify-center items-center">
+      <div class="transition-all ease-in-out duration-1000 flex flex-col justify-center"></div>
+      <div class="transition-all ease-in-out duration-1000 flex flex-col justify-center"></div>
+      <div class="transition-all ease-in-out duration-1000 flex flex-col justify-center"></div>
+    </div>
+    <div class="flex flex-col flex-wrap md:flex-row justify-center items-center">
+      {% for destination in site.data.destinations %}
+      <div class="w-1/3 transition-all ease-in-out duration-1000 flex flex-col justify-center mr-0 md:mr-2">
+        <div slot="bottom-left" class="max-w-xs">
+          <div class="p-5 shadow-md h-full">
+            <div class="flex-1 h-64 bg-cover overflow-hidden" style="background-image: url('/assets/{{destination.image_link}}')" title="{{destination.image_link}}"></div>
+            <div class="text-xs font-bold uppercase text-teal-700 mt-1 mb-2">Destination</div>
+            <div class="text-base font-bold mb-2">{{destination.title}}</div>
+            <a class="px-4 py-2 bg-pink-600 text-white hover:bg-pink-800 font-bold text-center rounded" href="{{destination.cta_link}}" target="_blank">{{destination.cta_label}} TO BE DEFINED</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
